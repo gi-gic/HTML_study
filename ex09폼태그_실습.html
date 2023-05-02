@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 회원가입 html -->
+    <form methon="get" action="#">
+
+        
+        <table width="400px">
+            <!-- Step 1 시작 -->
+            <tr bgcolor="gray" height="50px"
+            px" align="left">
+                <th colspan="2">Step1 : 아이디/비번 입력</th>
+            </tr>
+            <!-- (1) 아이디 -->
+            <tr bgcolor="whitesmoke" height="35px">
+                <td align="right">아이디 :</td>
+                <td>
+                    <input type="text" name="id" autofocus>    
+                </td>
+            </tr>
+            <!-- (2) 비밀번호 -->
+            <tr bgcolor="whitesmoke" height="35px">
+                <td align="right">비밀번호 :</td>
+                <td>
+                    <input type="password" name="pw" >    
+                </td>
+            </tr>
+            <!-- (3) 비밀번호 확인 -->
+            <tr bgcolor="whitesmoke" height="35px">
+                <td align="right">비밀번호 확인 :</td>
+                <td>
+                    <input type="password" name="pw" >    
+                </td>
+            </tr>
+            <!-- Step 1 끝 -->
+            
+            <!-- 정렬하고 싶은 영역 선택 + ctrl + K + F -->
+            <!-- Step 2 시작 -->
+            <tr bgcolor="gray" height="50px" align="left">
+                <th colspan="2">Step2 : 개인정보</th>
+            </tr>
+            
+            <!-- (4) 성별 -->
+            <tr bgcolor="whitesmoke" height="35">
+                <td align="right">성별 :</td>
+                <td>
+                    남<input type="radio" name="gender" value="man">
+                    여<input type="radio" name="gender" value="woman">
+                </td>
+            </tr>
+            
+            <!-- (5) 혈액형 -->
+            <tr bgcolor="whitesmoke" height="35">
+                <td align="right">혈액형 :</td>
+                <td>
+                    <select>
+                        <option>A형</option>
+                        <option>B형</option>
+                        <option>AB형</option>
+                        <option>O형</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- (6) 생일 -->
+            <tr bgcolor="whitesmoke" height="35">
+                <td align="right">생일 :</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <!-- Step 2 끝 -->
+            
+            <!-- Step 3 시작 -->
+            <tr bgcolor="gray" height="50px" align="left">
+                <th colspan="2">Step3 : 선호도</th>
+            </tr>
+            
+            <!-- (7) 취미 -->
+            <tr bgcolor="whitesmoke" height="35">
+                <td align="right">취미 :</td>
+                <td>
+                    축구<input type="checkbox" name="soccer" value="socc">
+                    야구<input type="checkbox" name="baseball" value="base">
+                    농구<input type="checkbox" name="basketball" value="bask">
+                </td>
+            </tr>
+            
+            <tr bgcolor="whitesmoke" height="35">
+                <td align="right">좋아하는 색깔 :</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <!-- Step 3 끝 -->
+            
+            <!-- Step 4 시작 -->
+            <tr bgcolor="gray" height="50px" align="left">
+                <th colspan="2">Step4 : 적고 싶은 말</th>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <textarea cols="56" rows="5l"></textarea>
+                </td>
+            </tr>
+            <!-- Step 4 끝 -->
+            
+            <!-- 회원가입 제출 & 초기화 -->
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="제출">
+                    <input type="reset" value="초기화">
+                </td>
+            </tr>
+            
+        </table>
+        
+    </form>
+</body>
+</html>
